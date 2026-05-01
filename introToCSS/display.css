@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.abc{
+    width: 200px;
+    height: 200px;
+}
+
+#mydiv, 
+#mydiv1,
+ #mydiv2{
+    border: 1px solid #000;
+    background-color: grey;
+}
+#mydiv2{
+    display: none;
+
+}
+#mydiv1{
+    margin: 5px;
+}
+
+.abc{
+    height: 200px;
+    width: 200px;
+}
+
+#myspan,
+ #myspan1,
+ #myspan2{
+   border: 2px solid #000;
+    background-color: blue;
+}
+
+#myspan2{
+    display: inline;
+}
+#myspan1{
+    margin: 5px;
+}
+
+
+.abcd{
+    height: 600px;
+    width: 600px;
+}
+

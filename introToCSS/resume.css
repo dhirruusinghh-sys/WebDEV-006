@@ -1,0 +1,235 @@
+
+    body {
+      background-color: rgb(121, 200, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 30px;
+    }
+    
+   
+    .main-box {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+    
+  
+    .left-side {
+      width: 350px;
+      background-color: #1e2c3a;
+      color: white;
+      float: left;
+      padding: 20px;
+      min-height: 1300px;
+    }
+    
+    .right-side {
+      width: 570px;
+      background-color: white;
+      float: left;
+      padding: 20px;
+    }
+    
+  
+    .clear {
+      clear: both;
+    }
+    
+    
+    .heading-left {
+      color: #9bb7d4;
+      font-size: 18px;
+      font-weight: bold;
+      border-left: 4px solid #4f9da6;
+      padding-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .heading-right {
+      color: #1f2e3c;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 3px solid #4f9da6;
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    
+  
+    .my-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .contact-box {
+      background-color: #0f1a24;
+      padding: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+   
+    .skills-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .skills-list li {
+      background-color: #0f1a24;
+      padding: 8px 12px;
+      margin-bottom: 5px;
+      border-left: 3px solid #4f9da6;
+      font-size: 14px;
+    }
+    
+  
+    .edu-item {
+      margin-bottom: 20px;
+    }
+    
+    .edu-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .edu-detail {
+      color: #b0c7db;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+    
+    .edu-date {
+      color: #7f9bb5;
+      font-size: 12px;
+    }
+   
+    .award-item {
+      margin-bottom: 20px;
+    }
+    
+    .award-name {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    
+    .award-date {
+      color: #a0bdd6;
+      font-size: 12px;
+    }
+    
+    .award-desc {
+      color: #c2d2e3;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+    
+    .summary-box {
+      background-color: #eef2f6;
+      padding: 15px;
+      border-left: 6px solid #4f9da6;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    
+   
+    .exp-item {
+      margin-bottom: 25px;
+    }
+    
+    .exp-header {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .exp-title {
+      font-size: 16px;
+      color: #000;
+    }
+    
+    .exp-date {
+      font-size: 14px;
+      color: #4a6f87;
+      float: right;
+    }
+    
+    .exp-role {
+      color: #2c5777;
+      font-weight: 600;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .exp-desc {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+    }
+    
+   
+    .edu-right-item {
+      border-left: 3px solid #ccc;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .school {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .school-meta {
+      color: #3f5b72;
+      font-size: 13px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+   
+    .soft-box {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .skill-tag {
+      background-color: #eef2f6;
+      padding: 5px 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+    
+    
+    .ref-row {
+      margin-top: 15px;
+    }
+    
+    .ref-box {
+      width: 250px;
+      background-color: #f4f7fb;
+      padding: 12px;
+      margin-right: 15px;
+      float: left;
+    }
+    
+    .ref-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .ref-info {
+      font-size: 13px;
+      color: #34658b;
+      margin-bottom: 3px;
+    }
+    
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #ccc;
+      margin: 15px 0;
+    }

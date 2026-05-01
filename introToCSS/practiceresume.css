@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#page{
+    border: 1px solid black;
+    width: 794px;
+    height: 1123px;
+}
+
+
+
+
+#sidebar{
+    width: 35%;
+    background-color: #34495E;
+}
+#maincontent{
+    width: 65%;
+    border: 2px solid blue;
+    padding: 10px;
+   
+}
+#iamge{
+   margin: auto;
+   height: 250px;
+   width: 250px;
+   overflow: hidden;
+   border-radius: 50%;
+
+   img{
+    width: inherit;
+    height: inherit;
+   }
+}
+
+#name{
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+}
+#title{
+    color: antiquewhite;
+    font-variant: small-caps;
+    text-align: center;
+}
+hr{
+    margin-top: 5px;
+    border: 1px solid white;
+   
+}

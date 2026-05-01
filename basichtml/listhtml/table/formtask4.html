@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <center>
+        <h1>Registration Form</h1>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <th>Student Name</th>
+                <td><input type="text" placeholder="First Name" value=""></td>
+                <td><input type="text" placeholder="Middle Name" value=""></td>
+                <td><input type="text" placeholder="Last Name" value=""></td>
+            </tr>
+
+            <tr>
+                <th>Father's Name</th>
+                <td rowspan="1"><input type="text" placeholder="Enter your Father's Name" value=""></td>
+                <th>Mother Name</th>
+                <td><input type="text" placeholder="Enter your Mother's Name"></td>
+
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="text" placeholder="DD/MM/YYYY" value=""></td>
+                <th>Gender</th>
+                <td>
+                    <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Category</th>
+                <td>
+                    <div class="radio-group">
+                    <label><input type="radio" name="category" value="gen"> Gen</label>
+                    <label><input type="radio" name="category" value="obc"> OBC</label>
+                    <label><input type="radio" name="category" value="sc"> SC/ST</label>
+                    </div>
+                </td>
+                <th>Handicapped</th>
+                <td>
+                    <div  class="radio-group">
+                    <label><input type="radio" name="handicapped" value="yes"> Yes</label>
+                    <label><input type="radio" name="handicapped" value="no"> No</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Ex-Serviceman</th>
+                <td>
+                    <div  class="radio-group">
+                    <label><input type="radio" name="ex-serviceman" value="yes"> Yes</label>
+                    <label><input type="radio" name="ex-serviceman" value="no"> No</label>
+                    </div>
+                </td>
+                <th>EWS</th>
+                <td>
+                    <div  class="radio-group">
+                    <label><input type="radio" name="ews" value="yes"> Yes</label>
+                    <label><input type="radio" name="ews" value="no"> No</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Email  ID</th>
+                <td><input type="email" placeholder="Enter your Email ID" value=""></td>
+                <th>Mobile No.</th>
+                <td><input type="tel" placeholder="+910000000000" value=""></td>
+            </tr>
+            <tr>
+                <th>State</th>
+                <td>
+                    <select>
+                        <option value="">Select State</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+
+                </td>
+                <th>City</th>
+                <td>
+                    <select>
+                        <option value="">Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="delhi">Delhi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload Photo</th>
+                <td  colspan="1">
+                    <div  class="file-wrapper">
+                        <input type="file" name="photo" id="image/*">
+                        <label for="photo" class="file-button">Browser...</label>
+                        <span class="file-file-text">No file selected</span>
+                    </div>
+                </td>
+                <th>Upload Signature</th>
+                <td>
+                    <div class="file-wrapper">
+                        <input type="file" name="signature" id="image/*">
+                        <label for="signature" class="file-button">Browser...</label>
+                        <span class="fake-file-text">No file selected</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="submit-cell">
+                    <button type="submit" class="submit-button">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

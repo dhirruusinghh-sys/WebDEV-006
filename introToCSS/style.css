@@ -1,0 +1,44 @@
+*{
+    background-color: rgb(255, 0, 187);
+    
+}
+/* this  for  alll  div selector */
+div{
+    background-color: aqua;
+    border: 2px;
+}
+div{
+    background-color: rgb(255, 0, 0);
+    border: 3px solid black;
+}
+/* for class selector */
+.abc{
+    background-color: rgb(0, 255, 0);
+    color: red;
+    border: 5px solid green;
+}
+.abc{
+    background-color: rgb(233, 132, 0);
+}
+h2{
+    background-color: blue;
+}
+#head1{
+    background-color: purple;
+    border: 5px solid black;
+}
+h1{
+    background-color: rgb(0, 255, 255);
+    border: 3px solid black;
+}
+#newButton{
+    margin-left: auto;
+    background-color: rgb(255, 0, 255);
+    border: 3px solid green;
+    border-radius: 2px;
+    color: aliceblue;
+}
+div{
+    background-color: rgb(255, 0, 0);
+    border: 3px solid black;
+}

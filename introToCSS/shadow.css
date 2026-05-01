@@ -1,0 +1,44 @@
+#box {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border: 1px solid #000;
+    box-shadow: 20px 20px 15px 0 rgba(129, 6, 6, 0.3);
+}
+#texsample {
+    font-size: 24px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+#somedata{
+    width: 400px;
+    border: 1px solid#000;
+    margin: auto;
+}
+#somedata h1{
+   color: aqua;
+}
+#somedata h3{
+    color: red;
+}
+img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#somedata p{
+    color: green;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
