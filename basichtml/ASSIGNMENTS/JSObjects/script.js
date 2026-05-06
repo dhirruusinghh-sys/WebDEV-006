@@ -91,6 +91,8 @@ console.log(ar1.filter((val) => val >20));
 
 let string = "Hello World! Welcome to JavaScript programming.";
 console.log(string.split(" "));
+console.log(string.split("o"));
+console.log(string.split("e"));
 
 
 // map foreach,findindex,findlastindex,filter,split,sort,filter,Object.keys,slice,objects.values,  JSON are all array methods in JavaScript that allow you to manipulate and work with arrays in different ways.
