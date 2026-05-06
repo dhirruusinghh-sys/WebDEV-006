@@ -94,3 +94,4 @@ console.log(string.split(" "));
 
 
 // map foreach,findindex,findlastindex,filter,split,sort,filter,Object.keys,slice,objects.values,  JSON are all array methods in JavaScript that allow you to manipulate and work with arrays in different ways.
+console.log(String);
