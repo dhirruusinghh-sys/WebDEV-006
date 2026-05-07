@@ -1,0 +1,9 @@
+#bulb1  {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: gray;
+    border: 1px solid;
+    justify-content: center;
+    display: flex;
+}
