@@ -1,0 +1,49 @@
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: aqua;
+
+}
+
+#bulb1{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color:white;
+    border: 1px solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.box{
+    width: 50px;
+    height: 30px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+#parentclass{
+    display: flex;
+    gap: 10px;
+}
+#redcolor{
+    width: 50px;
+    height: 30px;
+    border: 1px solid ridge;
+    cursor: pointer;
+}
+#bluecolor{
+width: 50px;
+    height: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#greecolor{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}

@@ -1,57 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Color Controller</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Controller</title>
 
-  <link rel="stylesheet" href="hw.css">
-</head>
-<body>
+    <link rel="stylesheet" href="hw.css" />
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="content-area" id="contentArea">
+        <h1 id="mainHeading">This is a Heading</h1>
 
-  <div class="main-box">
+        <p id="mainPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          pariatur veniam molestiae harum adipisci. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
+        </p>
+      </div>
 
-    
-    <div class="content-area" id="contentArea">
+      <div class="control-area">
+        <div class="color-box">
+          <span>Background Color</span>
+          <input type="color" id="bgPicker" />
+        </div>
 
-      <h1 id="mainHeading">
-        This is a Heading
-      </h1>
+        <div class="color-box">
+          <span>Heading Color</span>
+          <input type="color" id="headingPicker" />
+        </div>
 
-      <p id="mainPara">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quasi pariatur veniam molestiae harum adipisci.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+        <div class="color-box">
+          <span>Paragraph Color</span>
+          <input type="color" id="paraPicker" />
+        </div>
 
+        <button id="resetBtn">Reset All</button>
+      </div>
     </div>
 
-  
-    <div class="control-area">
-
-      <div class="color-box">
-        <span>Background Color</span>
-        <input type="color" id="bgPicker">
-      </div>
-
-      <div class="color-box">
-        <span>Heading Color</span>
-        <input type="color" id="headingPicker">
-      </div>
-
-      <div class="color-box">
-        <span>Paragraph Color</span>
-        <input type="color" id="paraPicker">
-      </div>
-
-      <button id="resetBtn">
-        Reset All  
-      </button>
-
-    </div>
-
-  </div>
-
-  <script src="hw.js"></script>
-</body>
+    <script src="hw.js"></script>
+  </body>
 </html>
