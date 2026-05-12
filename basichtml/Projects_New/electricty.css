@@ -1,0 +1,24 @@
+ body {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .btn-secondary:hover {
+      background-color: #6c757d;
+    }
+    .result-card {
+      margin-top: 20px;
+      display: none;
+    }
+    .label-bold {
+      font-weight: 600;
+    }
