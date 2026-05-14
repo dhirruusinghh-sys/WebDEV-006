@@ -1,46 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="electricty.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity Bill Calculator</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="electricity.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3 class="text-center mb-4">Electricity Bill Calculator</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card p-4 main-card">
+            <h3 class="text-center mb-4">⚡ Electricity Bill Calculator</h3>
 
-                    <div class="mb-3">
-                        <label for="units"  class="form-label">Enter Units Consumed:</label> 
-                        <input type="number" id="units" class="form-control" placeholder="Enter units " min="0">
-                    </div>
+            <input
+              type="number"
+              id="units"
+              class="form-control mb-3"
+              placeholder="Enter units"
+            />
 
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-primary w-50 me-2" onclick="calculateBill()">Calculate </button>
-                        <button class="btn btn-secondary w-50" onclick="resetForm()">Reset</button>
-                    </div>
-
-                    <div class="card result-card p-3" id="resultCard">
-                        <h5 class="mb-3">Bill Breakdown</h5>
-                        <p><span class="label-bold">0-50 Units: </span><span id="slab1"></span></p>
-                        <p><span class="label-bold">51-200 Units: </span><span id="slab2"></span></p>
-                        <p><span class="label-bold">201-450 Units: </span><span id="slab3"></span></p>
-                        <p><span class="label-bold">Above 450 Units: </span><span id="slab4"></span></p>
-                        <hr>
-                        <p><span class="label-bold">Subtotal:</span><span id="subtotal"></span></p>
-                        <p><span class="label-bold">Surcharge (20%):</span><span id="surcharge"></span></p>
-                        <h5 class="mb-0">Total Bill:</h5>
-                        <h5><span class="label-bold">Total:</span>₹<span id="total"></span></h5>
-                    </div>
-                </div>
+            <div class="d-flex">
+              <button
+                class="btn btn-primary w-50 me-2"
+                onclick="calculateBill()"
+              >
+                Calculate
+              </button>
+              <button class="btn btn-danger w-50" onclick="resetForm()">
+                Reset
+              </button>
             </div>
+
+            <div class="card result-card p-3 mt-3" id="resultCard">
+              <p id="slab1"></p>
+              <p id="slab2"></p>
+              <p id="slab3"></p>
+              <p id="slab4"></p>
+              <hr />
+              <p>Subtotal: ₹<span id="subtotal"></span></p>
+              <p>Surcharge: ₹<span id="surcharge"></span></p>
+              <h5>Total: ₹<span id="total"></span></h5>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="electricity.js"></script>
-</body>
+  </body>
 </html>

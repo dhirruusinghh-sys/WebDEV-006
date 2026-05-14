@@ -1,0 +1,12 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.task-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.task-text {
+  word-break: break-word;
+}
