@@ -1,3 +1,111 @@
-a:hover{
-    text-decoration: underline !important;
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: cyan;
+}
+
+/* Glass Card */
+.glass-card {
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+
+    animation: fadeIn 0.8s ease;
+}
+
+.glass-card h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Password box */
+.password-box {
+    display: flex;
+}
+
+.password-box input {
+    flex: 1;
+}
+
+.password-box button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save {
+    background: #00c853;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.clear {
+    background: #d50000;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.save:hover {
+    transform: scale(1.1);
+}
+
+.clear:hover {
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

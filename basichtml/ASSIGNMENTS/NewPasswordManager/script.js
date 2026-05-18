@@ -1,37 +1,29 @@
-document.getElementById("passForm").addEventListener("submit", (event)=>{
-    event.preventDefault();
+const form = document.getElementById("passForm");
+const toggle = document.getElementById("togglePass");
+const passwordField = document.getElementById("password");
 
-    const webSiteName = document.getElementById("siteName").value.trim();
-    const userName = document.getElementById("userName").value.trim();
-    const password =  document.getElementById("password").value;
+toggle.addEventListener("click", () => {
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+});
 
-    const packet = {
-        webSiteName: webSiteName,
-        userName: userName,
-        password: password,
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const data = {
+        webSiteName: siteName.value,
+        userName: userName.value,
+        password: password.value
     };
 
-    saveToLocalStorage(packet);
+    let old = JSON.parse(localStorage.getItem("Passwords")) || [];
+    old.push(data);
 
-    document.getElementById("siteName").value = "";
-    document.getElementById("userName").value = "";
-    document.getElementById("password").value = "";
+    localStorage.setItem("Passwords", JSON.stringify(old));
+
+    form.reset();
+    alert("Saved 🔥");
 });
-
-document.getElementById("passForm").addEventListener("reset", (event)=>{
-    event.preventDefault();
-    document.getElementById("siteName").value = "";
-    document.getElementById("userName").value = "";
-    document.getElementById("password").value = "";
-});
-
-
-function saveToLocalStorage(packet){
-    const oldData =JSON.parse(localStorage.getItem("Passwords")) || [];
-
-    oldData.push(packet);
-
-    const packetInString =JSON.stringify(oldData);
-
-    localStorage.setItem("Passwords", packetInString);
-}
