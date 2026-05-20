@@ -1,22 +1,22 @@
-function getData(value){
-    return new Promise ((resolve,reject)=>{
-        setTimeout(()=>{
-            if (vlaue === 3 ){
-                reject("Query Not Found");
-            }else{
-                console.log("Data Sent", value);
-                resolve("Query Solved");
-            }
-        },2000  );
-  
-    });
+function willDoSomething(p,q, add){
+    console.log("Doing Something");
+    let m = p + 10;
+let n = q + 10;
+
+console.log(add(m , n));
+
+}
+
+function sum (a,b){
+    let x = a  + 1;
+    let y = b - 1;
+
+    return x + y;
 }
 
 
-getData(1)
-    .then(()=> getData(2))
-    .then(()=> getData(3))
-    .then(()=> getData(3))
-    .then(()=> getData(4))
-    .then(()=> getData(5))
-    .catch((rej) => console.log(rej));
+willDoSomething(5, 6, sum);
+
+willDoSomething(5,6,(r,s) => {
+    return r * s;
+});
