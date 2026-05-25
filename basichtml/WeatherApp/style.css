@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.weather-card {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: fadeIn 1s ease;
+}
+
+.app-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.app-title i {
+  color: #ffd43b;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 75%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 55px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  background: #ffd43b;
+  color: black;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  transform: scale(1.1);
+  background: white;
+}
+
+.weather-info img {
+  width: 120px;
+}
+
+.weather-info h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.weather-info h4 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.detail-box {
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.detail-box:hover {
+  transform: translateY(-5px);
+}
+
+.detail-box i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.time-box {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.loading {
+  display: none;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 450px) {
+
+  .weather-card {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+}
