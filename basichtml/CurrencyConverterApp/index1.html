@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Currency Converter</h1>
+        <p>Real-time exchange rates</p>
+      </div>
+
+      <div class="content">
+        <label>Amount</label>
+        <input type="number" id="amount" value="1" />
+
+        
+        <div class="currency-box">
+          <div class="left">
+            <div class="flag">
+              <img id="fromFlag" src="https://flagcdn.com/w80/us.png" />
+            </div>
+
+            <div class="text">
+              <small>From</small>
+              <h3 id="fromName">US Dollar</h3>
+            </div>
+          </div>
+
+          <select id="from">
+            <option value="usd">USD</option>
+            <option value="inr">INR</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+          </select>
+        </div>
+
+       
+        <div class="swap" onclick="swapCurrency()">⇅</div>
+
+       
+        <div class="currency-box">
+          <div class="left">
+            <div class="flag">
+              <img id="toFlag" src="https://flagcdn.com/w80/in.png" />
+            </div>
+
+            <div class="text">
+              <small>To</small>
+              <h3 id="toName">Indian Rupee</h3>
+            </div>
+          </div>
+
+          <select id="to">
+            <option value="inr">INR</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+          </select>
+        </div>
+
+        <button onclick="convertCurrency()">Convert Currency</button>
+
+        <div class="result">
+          <h2 id="result">₹0.00</h2>
+          <p id="rate">1 USD = 83.45 INR</p>
+          <p id="time"></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        Exchange rates provided by <span>Currency API</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
