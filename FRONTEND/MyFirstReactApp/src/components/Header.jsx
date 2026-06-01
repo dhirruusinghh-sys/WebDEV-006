@@ -1,8 +1,24 @@
+
+import {Link} from 'react-router-dom';
+
 function Header(){
     return(
-        <div id="header">
-            <h1>this is my header</h1>
+      <>
+      <div className="bg-primary-subtle  p-3 d-flex justify-content-between align-items-center">
+        <div className="text-primary fs-4 fw-bold">My Company </div>
+
+        <div className="d-flex gap-4">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/contact">Contact Us</Link>
         </div>
+        <div className="d-flex gap-4">
+            <link to="">
+            <button className="btn btn-primary">Register</button>
+        </div>
+      </div>
+      </>
     )
 }
 

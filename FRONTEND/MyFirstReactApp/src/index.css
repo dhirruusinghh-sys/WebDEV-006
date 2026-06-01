@@ -1,55 +1,8 @@
-#abcd{
-   background-color:rgb(117, 59, 172);
-    color:white;
-    border:2px solid rgb(180, 224, 48);
-    padding:10px;
-    font-size:20px;
-    justify-content:center;
-    display:flex;
-    text-align:center;
-    border-radius:10px;
-    width:300px;
-    margin:20px auto;
-    font-family:Arial, Helvetica, sans-serif;
-    cursor:pointer;
-    
-    
+a{
+    text-decoration: none;
 }
 
-p{
-    width:500px;
-    margin:20px auto;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:justify;
-    line-height:1.5;
-    border:1px solid rgb(117, 59, 172);
-    padding:10px;
-    border-radius:10px;
-    background-color:rgb(240, 240, 240);  
-}
 
-button{
-    display:block;
-    margin:20px auto;
-    padding:10px 20px;
-    font-size:16px;
-    background-color:rgb(117, 59, 172);
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+a:hover{
+    text-decoration: underline !important;
 }
-#header{
-    background-color:rgb(117, 59, 172);
-    color:rgb(50, 17, 216);
-    padding:20px;
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
-}
-#footer{
-    background-color:rgb(117, 59, 172);
-    color:rgb(168, 74, 74);
-    padding:20px;
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
-} 
