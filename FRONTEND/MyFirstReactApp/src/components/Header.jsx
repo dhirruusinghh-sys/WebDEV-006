@@ -14,8 +14,8 @@ function Header(){
             <Link to="/contact">Contact Us</Link>
         </div>
         <div className="d-flex gap-4">
-            <link to="">
-            <button className="btn btn-primary">Register</button>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
         </div>
       </div>
       </>
