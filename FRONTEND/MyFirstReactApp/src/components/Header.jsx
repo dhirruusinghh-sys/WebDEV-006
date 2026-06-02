@@ -11,11 +11,15 @@ function Header(){
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/products">Products</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">ContactUs</Link>
         </div>
         <div className="d-flex gap-4">
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to={"/login"}>
+            <button className="btn btn-outline-primary">Login</button>
+            </Link>
+            <Link to={"/register"}>
+            <button className="btn btn-secondary">Register</button>
+            </Link>
         </div>
       </div>
       </>
