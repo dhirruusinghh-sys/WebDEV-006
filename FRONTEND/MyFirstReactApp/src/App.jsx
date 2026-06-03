@@ -17,21 +17,19 @@ function    App(){
 return (
   <>
   <BrowserRouter>
-  <Header />
+    <Header />
 
-  
-  
-  <Routers>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/contact" element={<ContactUs />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/register" element={<Register />} />
-    <Route path="/product" element={<Product />} />
-  </Routers>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/product" element={<Product />} />
+      </Routes>
   </BrowserRouter>
-  </>
-)
+   </>
+  );
 }
 
 export  default App;
