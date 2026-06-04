@@ -21,6 +21,5 @@
       </div>
     </>
   );
-}
 
 export default Header;
