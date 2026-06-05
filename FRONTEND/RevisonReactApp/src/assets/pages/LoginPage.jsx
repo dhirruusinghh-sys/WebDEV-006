@@ -20,7 +20,17 @@ function LoginPage() {
         <div>My user Name is {userName}</div>
         <div>My city is {city}</div>
 
-     
+        <hr />
+        <br />
+        <br />
+        <br />
+        <hr />
+
+        <input type="text"
+        name="city"
+        onChange={(e) => setCity(e.target.value)}
+        placeholder="Enter your city"
+         />
 
         </>
     );
