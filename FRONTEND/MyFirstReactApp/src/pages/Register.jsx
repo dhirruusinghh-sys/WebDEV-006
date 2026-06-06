@@ -1,9 +1,19 @@
+import {useState} from 'react';
 function Register() {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
     return (
         <>
-            <div className="container mt-5 d-flex justify-content-center align-items-center">
-                <span className="text-primary fs-2">Register</span>
-            </div>
+          
         </>
     );
 }
+
+export default Register;
