@@ -16,19 +16,19 @@ function App() {
       </div>
 
       <LoginPage />
-      {<p>My Age is {Age}</p>}
+      {/* {<p>My Age is {Age}</p>}
 
       <hr/>
 
 
       <input type="number" placeholder="Enter your age" />
 
-      <img src={contactImage} alt="" className="w-400 h-400" />
+      <img src={contactImage} alt="" className="w-400 h-400" /> */}
 
 
-      <button className="btn btn-primary d-flex gap-2 align-items-center">
+      {/* <button className="btn btn-primary d-flex gap-2 align-items-center">
         <FaSave className="fs-5" text-danger />  <span>Save Data</span>
-      </button>
+      </button> */}
     </>
   );
 }

@@ -1,36 +1,45 @@
 import {useState} from 'react';
+import { RxFontRoman } from 'react-icons/rx';
 
 function LoginPage() {
     const[userName, setUserName] = useState("");
-    const[city, setCity] = useState("");
+    const[password, setPassword] = useState("");
+
+
+    const handleSubmit =(e) => {
+        e.preventDefault();
+        console.log("userName: ", userName);
+        console.log("password: ", password);
+    };
 
     return (
         <>
-        <input type="text"
-        name="userName"
-        onChange={(e) => setUserName(e.target.value)}
-        placeholder="Enter your name" />
+       <div className="d-flex justify-content-center">
+        <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
+            <h1 className="text-center">Welcome Back!!!</h1>
+            <br/>
 
-        <hr/>
-        <br/>
-        <br/>
-        <br/>
-        <hr/>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="userName">User Name</label>
+                <input 
+                    type="text" 
+                    id="userName" 
+                    className="form-control mb-3" 
+                    value={userName} 
+                    onChange={(e) => setUserName(e.target.value)} 
+                />
+                <label htmlFor="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    className="form-control mb-3" 
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)} 
+                />
+              
 
-        <div>My user Name is {userName}</div>
-        <div>My city is {city}</div>
-
-        <hr />
-        <br />
-        <br />
-        <br />
-        <hr />
-
-        <input type="text"
-        name="city"
-        onChange={(e) => setCity(e.target.value)}
-        placeholder="Enter your city"
-         />
+        </div>
+       </div>
 
         </>
     );
