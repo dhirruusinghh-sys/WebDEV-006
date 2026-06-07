@@ -5,7 +5,7 @@ function Home() {
                 <div className="text-center">
                     <h1>Welcome to My Website</h1>
                     <p className="lead">
-                        Learn React, Bootstrap and Web Development
+                        Learn Html, Css, JavaScript, React, Bootstrap and Web Development
                     </p>
                     <button className="btn btn-primary">
                         Get Started
@@ -21,6 +21,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
+                    <br/>
 
                     <div className="col-md-4">
                         <div className="card shadow">
@@ -31,7 +32,62 @@ function Home() {
                         </div>
                     </div>
 
+
+                    
+                       <div className="col-md-4">
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h4>JavaScript</h4>
+                                <p>Learn the fundamentals of JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                     <div className="col-md-4">
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h4>AI Projects</h4>
+                                <p>Practice with real-world projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+
+                    
+                    <div className="col-md-4">
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h4>AI Projects</h4>
+                                <p>Practice with real-world projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div className="col-md-4">
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h4>AI Projects</h4>
+                                <p>Practice with real-world projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <div className="col-md-4">
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h4>AI Projects</h4>
+                                <p>Practice with real-world projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                      <div className="col-md-4">
                         <div className="card shadow">
                             <div className="card-body">
                                 <h4>Projects</h4>
