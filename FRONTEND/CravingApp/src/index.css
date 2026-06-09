@@ -1,3 +1,10 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@tailwind utilities;
+
+.mybtnDesign {
+  @apply bg-amber-300 text-indigo-500 px-5 py-2 border rounded-2xl shadow hover:bg-amber-700;
+}
+
+
+:root{
+    --primary-color:#F54927
+}
