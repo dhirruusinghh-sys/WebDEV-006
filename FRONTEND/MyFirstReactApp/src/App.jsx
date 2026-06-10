@@ -6,6 +6,7 @@ import Product from "./pages/Product";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ProductStore from "./components/ProductStore";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -14,6 +15,9 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+        <ProductStore />
+        <ProductStore />
+        <ProductStore />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,6 +26,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/" elemenproduct-storet={<ProductStore />} />
         </Routes>
       </BrowserRouter>
     </>

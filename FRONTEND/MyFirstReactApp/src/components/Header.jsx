@@ -20,7 +20,7 @@ function Header() {
         <div className="d-flex gap-4">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <Link to="/product">Product</Link>
+          <Link to="/product-store">Product</Link>
           <Link to="/contact-us">Contact Us</Link>
         </div>
 

@@ -12,7 +12,7 @@ function Home() {
                     </button>
                 </div>
 
-                <div className="row mt-5">
+                {/* <div className="row mt-5">
                     <div className="col-md-4">
                         <div className="card shadow">
                             <div className="card-body">
@@ -95,7 +95,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     );
