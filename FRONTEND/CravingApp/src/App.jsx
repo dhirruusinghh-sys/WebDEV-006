@@ -21,7 +21,7 @@ const App = () => {
             type="text"
             name=""
             id=""
-            placeholder="add any text"
+            placeholder="Add any text"
             className="border p-3 placeholder:text-red-600 bg-(--primary-color)"
           />
           <button className="bg-blue-500 px-5 py-2 mt-3 mx-5 rounded text-white hover:bg-blue-700 hover:text-red-600 active:bg-amber-500">
