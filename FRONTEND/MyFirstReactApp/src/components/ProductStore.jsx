@@ -14,10 +14,10 @@ function ProductCard() {
   };
 
   return (
-    <div className="max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+    <div className="w-64 max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
       
       
-      <div className="h-72 bg-gray-100 p-4">
+      <div className="h-49 bg-gray-100 p-4">
         <img
           src={product.image}
           alt={product.title}
