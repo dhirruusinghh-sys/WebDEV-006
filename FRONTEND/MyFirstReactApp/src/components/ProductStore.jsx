@@ -16,7 +16,7 @@ function ProductCard() {
   return (
     <div className="max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
       
-      {/* Bag Image */}
+      
       <div className="h-72 bg-gray-100 p-4">
         <img
           src={product.image}
@@ -25,7 +25,7 @@ function ProductCard() {
         />
       </div>
 
-      {/* Content */}
+    
       <div className="p-5">
         <span className="text-sm text-blue-500 font-medium uppercase">
           {product.category}

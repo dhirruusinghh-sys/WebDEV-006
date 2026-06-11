@@ -15,9 +15,15 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <ProductStore />
-        <ProductStore />
-        <ProductStore />
+         <div className="flex gap-6 justify-center flex-wrap p-6">
+             <ProductStore />
+             <ProductStore />
+             <ProductStore />
+             <ProductStore />
+             <ProductStore />
+             <ProductStore />
+          </div>
+        
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +32,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/" elemenproduct-storet={<ProductStore />} />
+          <Route path="/product-store" element={<ProductStore />} />
         </Routes>
       </BrowserRouter>
     </>
