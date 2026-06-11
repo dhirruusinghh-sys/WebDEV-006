@@ -22,6 +22,9 @@ function App() {
              <ProductStore />
              <ProductStore />
              <ProductStore />
+              <ProductStore />
+             <ProductStore />
+
           </div>
         
 
