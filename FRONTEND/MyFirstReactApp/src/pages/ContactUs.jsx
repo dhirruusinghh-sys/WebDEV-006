@@ -1,15 +1,11 @@
-import React from 'react'
-
-const Contact = () => {
-  return (
-    <>
-       <div>Contact</div>
-    </>
-  )
+function ContactUs() {
+    return (
+        <>
+            <div className="container mt-5 d-flex justify-content-center align-items-center">
+                <span className="text-primary fs-2">Contact Us</span>
+            </div>
+        </>
+    );
 }
 
 export default ContactUs;
-
-
-
-//  http://makeup-api.herokuapp.com/api/v1/products

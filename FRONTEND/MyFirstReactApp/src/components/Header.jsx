@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // import { TiVideo } from "react-icons/ti";
 import { FaBookOpen } from "react-icons/fa";
 
-function Header() {
+function Header () {
   return (
     <>
       <div className="bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
