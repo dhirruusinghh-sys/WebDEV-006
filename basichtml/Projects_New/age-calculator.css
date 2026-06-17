@@ -1,0 +1,89 @@
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main Card */
+.age-card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.age-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.age-card h1 {
+  color: #5a3ff2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.3);
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f3f4ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#MyAge {
+  color: #5a3ff2;
+  font-size: 1.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+  .age-card {
+    width: 95%;
+    padding: 20px;
+  }
+}
