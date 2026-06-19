@@ -1,0 +1,73 @@
+body{
+    overflow:hidden;
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.sky{
+    background:linear-gradient(to bottom,#87CEEB,#BFEFFF);
+}
+
+.road{
+    background:#444;
+    position:relative;
+    overflow:hidden;
+}
+
+.lane{
+    position:absolute;
+    width:6px;
+    height:100%;
+    background:repeating-linear-gradient(
+        white 0px,
+        white 30px,
+        transparent 30px,
+        transparent 60px
+    );
+    animation:moveRoad .4s linear infinite;
+}
+
+@keyframes moveRoad{
+    from{background-position-y:0;}
+    to{background-position-y:60px;}
+}
+
+.car{
+    position:absolute;
+    width:70px;
+    height:90px;
+    font-size:55px;
+    transition:left .15s;
+}
+
+.obstacle,.star{
+    position:absolute;
+    font-size:45px;
+}
+
+.cloud{
+    position:absolute;
+    color:white;
+    font-size:60px;
+    animation:cloudMove 15s linear infinite;
+}
+
+@keyframes cloudMove{
+    from{transform:translateX(-200px);}
+    to{transform:translateX(120vw);}
+}
+
+.popup{
+    animation:pop .4s ease;
+}
+
+@keyframes pop{
+    from{
+        transform:scale(.5);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
